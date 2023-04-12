@@ -1,0 +1,25 @@
+{
+    "name": "jsxfardin/laravel-form-builder",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fardin Ahsan",
+            "email": "fardin.ahsan75@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Jsxfardin\\LaravelFormBuilder\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelFormBuilder\\Providers\\AdnSmsServiceProvider"
+            ]
+        }
+    }
+}
