@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('forms', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('key');
+            $table->string('url')->nullable();
+            $table->string('method')->nullable();
+            $table->string('page')->nullable();
+            $table->text('feilds');
+            $table->text('remarks')->nullable();
             $table->timestamps();
         });
     }
