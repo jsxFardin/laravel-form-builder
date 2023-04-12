@@ -4,5 +4,9 @@ return [
         'name' => env('DB_DATABASE', 'form_builder'),
         'user' => env('DB_DATABASE', 'root'),
         'password' => env('DB_DATABASE', 'password'),
+    ],
+    'route' => [
+        'prefix' => 'dashboard',
+        'middleware' => ['auth', 'verified'],
     ]
 ];
